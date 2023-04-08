@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap");
+
+body {
+  font-family: "Noto Sans", sans-serif;
+  font-variant-numeric: tabular-nums;
+}
+
+svg {
+  display: block;
+}
+
+svg text {
+  font-family: inherit;
+  font-size: 0.75rem;
+}
+
+.tip {
+  opacity: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.tip.visible {
+  opacity: 1;
+}
+
+.state-path {
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: #aaa;
+  stroke-width: 1px;
+  cursor: pointer;
+}
+
+.state-path.hovered {
+  stroke: #000;
+  stroke-width: 1.5px;
+}
+
+.state-path.highlighted {
+  stroke: #000;
+  stroke-width: 3px;
+}
+
+.state-path.zero {
+  fill: #eee;
+}
+
+.node {
+  stroke: #aaa;
+  stroke-width: 1px;
+}
+
+.node:hover {
+  stroke: #000;
+  stroke-width: 1.5px;
+}
+
+.link {
+  fill: none;
+  stroke: #000;
+  stroke-opacity: 0.1;
+}
+
+.link:hover {
+  stroke-opacity: 0.3;
+}
+
+.node-labels {
+  pointer-events: none;
+}
+
+.highlight-line {
+  stroke-dasharray: 3;
+  stroke: #000;
+}
+
+.bar-rect {
+  stroke: #aaa;
+  stroke-width: 1px;
+}
+
+.bar-rect:hover {
+  stroke: #000;
+  stroke-width: 1.5px;
+}
